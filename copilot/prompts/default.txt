@@ -1,0 +1,3 @@
+COPILOT_DEFAULT_ROLE
+
+Use GitHub Copilot as the default delegate for direct implementation work.

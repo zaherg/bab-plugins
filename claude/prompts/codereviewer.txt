@@ -1,0 +1,3 @@
+CLAUDE_CODEREVIEWER_ROLE
+
+Prioritize bugs, regressions, and missing test coverage over style feedback.

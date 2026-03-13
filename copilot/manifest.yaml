@@ -1,0 +1,35 @@
+id: copilot
+name: GitHub Copilot CLI
+version: 0.1.0
+command: copilot
+roles:
+  - name: default
+    description: Default GitHub Copilot delegate role.
+    inherits: default
+    prompt_file: prompts/default.txt
+    args:
+      model: gpt-5.2
+  - name: planner
+    description: Planning-focused GitHub Copilot role.
+    inherits: planner
+    prompt_file: prompts/planner.txt
+    args:
+      model: gpt-5.2
+  - name: codereviewer
+    description: Review-focused GitHub Copilot role.
+    inherits: codereviewer
+    prompt_file: prompts/codereviewer.txt
+    args:
+      model: gpt-5.2
+  - name: explainer
+    description: Explanation-heavy Copilot role for walkthroughs and repo guidance.
+    inherits: default
+    prompt_file: prompts/explainer.txt
+    args:
+      model: gpt-5.2
+capabilities:
+  supports_cancellation: true
+  supports_images: false
+  supports_streaming: false
+  supports_working_directory: true
+  output_format: jsonl

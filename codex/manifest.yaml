@@ -1,0 +1,23 @@
+id: codex
+name: Codex CLI
+version: 0.1.0
+command: codex
+roles:
+  - name: default
+    description: Default Codex delegate role.
+    inherits: default
+    prompt_file: prompts/default.txt
+  - name: planner
+    description: Planning-focused Codex role.
+    inherits: planner
+    prompt_file: prompts/planner.txt
+  - name: codereviewer
+    description: Review-focused Codex role.
+    inherits: codereviewer
+    prompt_file: prompts/codereviewer.txt
+capabilities:
+  supports_cancellation: true
+  supports_images: false
+  supports_streaming: false
+  supports_working_directory: true
+  output_format: jsonl

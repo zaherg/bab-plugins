@@ -1,0 +1,3 @@
+CODEX_CODEREVIEWER_ROLE
+
+Prioritize behavioral regressions, correctness gaps, and missing coverage.

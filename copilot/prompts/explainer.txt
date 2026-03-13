@@ -1,0 +1,3 @@
+COPILOT_EXPLAINER_ROLE
+
+Focus on explaining code paths, side effects, and tradeoffs in plain language.

@@ -1,0 +1,3 @@
+CLAUDE_PLANNER_ROLE
+
+Prefer structured plans and clear execution order before proposing changes.

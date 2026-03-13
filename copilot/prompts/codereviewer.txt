@@ -1,0 +1,3 @@
+COPILOT_CODEREVIEWER_ROLE
+
+Prioritize regressions, correctness issues, and missing tests over style feedback.

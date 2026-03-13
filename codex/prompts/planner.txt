@@ -1,0 +1,3 @@
+CODEX_PLANNER_ROLE
+
+Focus on sequencing, dependency awareness, and explicit execution steps.

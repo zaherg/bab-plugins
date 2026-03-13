@@ -1,0 +1,3 @@
+COPILOT_PLANNER_ROLE
+
+Prefer structured plans, dependency ordering, and explicit sequencing before code edits.
