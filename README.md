@@ -52,6 +52,40 @@ For Copilot CLI installation and auth, use the official docs:
 - https://github.com/features/copilot/cli
 - https://docs.github.com/copilot/how-tos/copilot-cli
 
+## Tool Prompts
+
+Plugins can provide custom system prompts for bab's workflow tools. Add a `tool_prompts` section to your `manifest.yaml`:
+
+```yaml
+tool_prompts:
+  codereview: prompts/codereview.txt
+  debug: prompts/debug.txt
+  secaudit: prompts/secaudit.txt
+```
+
+Each key is a tool name, and the value is a path to a plain text file relative to the plugin directory. The prompt **replaces** the built-in system prompt when a tool routes through a plugin model (e.g. `copilot/gpt-4`). If a tool is not listed, bab uses its built-in prompt.
+
+Available tool names:
+
+| Tool | Description |
+|------|-------------|
+| `chat` | General conversation |
+| `challenge` | Challenge/critique ideas |
+| `thinkdeep` | Deep thinking/reasoning |
+| `codereview` | Code review |
+| `debug` | Debugging assistance |
+| `analyze` | Code analysis |
+| `refactor` | Refactoring suggestions |
+| `testgen` | Test generation |
+| `secaudit` | Security audit |
+| `docgen` | Documentation generation |
+| `tracer` | Trace/flow analysis |
+| `precommit` | Pre-commit checks |
+| `planner` | Planning tasks |
+| `consensus` | Multi-model consensus |
+
+See [Plugin Authoring](https://babmcp.github.io/bab/plugin-authoring/#tool-prompts) for full details on precedence and behavior.
+
 ## Copilot Plugin — Permissions
 
 By default the Copilot adapter does **not** pass `--allow-all` to the CLI. This means the Copilot CLI will run with its default (restricted) permissions.
