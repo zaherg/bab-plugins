@@ -7,13 +7,13 @@ First-party Bab delegate plugins that are installed externally instead of being 
 Install all plugins from this repository:
 
 ```bash
-bab add git@github.com:babmcp/plugins.git
+bab add git@github.com:zaherg/plugins.git
 ```
 
 Install non-interactively:
 
 ```bash
-bab add git@github.com:babmcp/plugins.git --yes
+bab add git@github.com:zaherg/plugins.git --yes
 ```
 
 ## Included Plugins
@@ -84,7 +84,7 @@ Available tool names:
 | `planner` | Planning tasks |
 | `consensus` | Multi-model consensus |
 
-See [Plugin Authoring](https://babmcp.github.io/bab/plugin-authoring/#tool-prompts) for full details on precedence and behavior.
+See [Plugin Authoring](https://zaherg.github.io/bab/plugin-authoring/#tool-prompts) for full details on precedence and behavior.
 
 ## Copilot Plugin — Permissions
 
