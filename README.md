@@ -7,13 +7,13 @@ First-party Bab delegate plugins that are installed externally instead of being 
 Install all plugins from this repository:
 
 ```bash
-bab add git@github.com:zaherg/plugins.git
+bab add git@github.com:zaherg/bab-plugins.git
 ```
 
 Install non-interactively:
 
 ```bash
-bab add git@github.com:zaherg/plugins.git --yes
+bab add git@github.com:zaherg/bab-plugins.git --yes
 ```
 
 ## Included Plugins
