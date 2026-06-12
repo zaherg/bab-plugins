@@ -4,7 +4,7 @@ const CLAUDE_ARGS = [
   "--output-format",
   "json",
   "--permission-mode",
-  "acceptEdits",
+  "plan",
   "--model",
   "sonnet",
 ];

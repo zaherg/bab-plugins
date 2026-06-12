@@ -4,6 +4,7 @@ const PROVIDER_ID = "copilot";
 const BASE_ARGS = [
   "--output-format",
   "json",
+  "--allow-all",
 ] as const;
 
 function normalizeText(value: unknown): string | undefined {

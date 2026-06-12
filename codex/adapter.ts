@@ -2,6 +2,7 @@ const PROVIDER_ID = "codex";
 const CODEX_ARGS = [
     "exec",
     "--json",
+    "--skip-git-repo-check",
 ];
 
 export function parseCodexJsonlOutput(

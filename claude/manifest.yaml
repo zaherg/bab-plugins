@@ -1,6 +1,6 @@
 id: claude
 name: Claude Code
-version: 0.1.0
+version: 0.1.1
 command: claude
 roles:
   - name: default
